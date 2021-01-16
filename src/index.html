@@ -24,19 +24,43 @@
   </style>
 </head>
 
+
+
+
+
 <body>
+
+
+
+
+
   <header>
-    <h1><img src="/img/logo.svg" alt="fylo-logo"></h1>
+
+    <h1><a href="#home"><img src="/img/logo.svg" alt="fylo-logo"></a></h1>
+
     <nav>
       <a href="#features">Features</a>
       <a href="#team">Team</a>
       <a href="#signin">Sign In</a>
+
     </nav>
+
   </header>
 
-  <main>
+
+
+
+
+  <main id="home">
+
+
+
+
+
     <section class="cta">
-      <img src="/img/illustration-intro.png" alt="">
+
+      <!-- <img src="/img/illustration-intro.png" alt="fylo"> -->
+
       <h2>All your files in one secure location, accessible anywhere.</h2>
 
       <div>
@@ -45,9 +69,15 @@
       </div>
 
       <div class="btn">Get Started</div>
+
     </section>
 
-    <section class="features">
+
+
+
+
+    <section id="features">
+
       <div class="feature-card">
         <img src="/img/icon-any-file.svg" alt="files-anywhere">
         <div class="feature-card__title">Access your files, anywhere</div>
@@ -79,10 +109,17 @@
         Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
         file types to be securely stored and shared.
       </div>
+
     </section>
 
+
+
+
+
     <section class="2ndcta">
-      <img src="/img/illustration-stay-productive.png" alt="stay-productive">
+
+      <!-- <img src="/img/illustration-stay-productive.png" alt="stay-productive"> -->
+
       <div class="2ndcta__title">Stay productive, wherever you are</div>
 
       <p>
@@ -96,9 +133,11 @@
       </p>
 
       <a href="#">See how Fylo works <img src="/img/icon-arrow.svg" alt=""></a>
+
     </section>
 
     <section>
+
       <div class="testimonial">
         Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
         become a well-oiled collaboration machine.
@@ -130,9 +169,15 @@
           Founder & CEO, Huddle
         </div>
       </div>
+
     </section>
 
+
+
+
+
     <section class="early-access">
+
       <div class="early-access__title">Get early access today</div>
 
       <p>
@@ -143,54 +188,114 @@
         <input type="email" placeholder="email@example.com" required>
         <input class="btn" type="submit" value="Get Started For Free">
       </form>
+
     </section>
+
+
+
+
+
   </main>
 
+
+
+
+
   <footer>
-    <img src="/img/logo.svg" alt="fylo-logo">
-    <div class="footer__contact">
-      <address>
-        <div>
+
+    <div class="footer">
+      <img class="footer__logo" src="/img/logo.svg" alt="fylo-logo">
+
+      <div class="footer__contact">
+        <div class="footer__contact--type">
           <img src="/img/icon-location.svg" alt="location">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua
+
+          <address>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </address>
         </div>
-      </address>
+
+        <div class="footer__contact--type">
+          <img src="/img/icon-phone.svg" alt="phone">
+
+          <a href="tel">+1-543-123-4567</a>
+        </div>
+        <div class="footer__contact--type">
+          <img src="/img/icon-email.svg" alt="email">
+
+          <a href="mailto:example@fylo.com" target="_blank">example@fylo.com</a>
+        </div>
+      </div>
 
       <div>
-        <img src="/img/icon-phone.svg" alt="phone">
-        <a href="tel">+1-543-123-4567</a>
+        <div class="footer__links">
+
+          <a href="#">About Us</a>
+          <a href="#">Jobs</a>
+          <a href="#">Press</a>
+          <a href="#">Blog</a>
+
+        </div>
+
+        <div class="footer__links footer__links--2">
+
+          <a href="#">Contact Us</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+
+        </div>
       </div>
-      <div>
-        <img src="/img/icon-email.svg" alt="email">
 
-        <a href="mailto:example@fylo.com" target="_blank">example@fylo.com</a>
+
+      <div class="footer__socialbuttons">
+        <a href="https://www.facebook.com/fylo" target="_blank">
+          <span class="fa-stack fa-lg">
+            <i class="fab fa-facebook-f fa-stack-1x"></i>
+          </span>
+        </a>
+
+        <a href="https://www.twitter.com/fylo" target="_blank">
+          <span class="fa-stack fa-lg">
+            <i class="fab fa-twitter fa-stack-1x"></i>
+          </span>
+        </a>
+
+        <a href="https://www.instagram.com/fylo" target="_blank">
+          <span class="fa-stack fa-lg">
+            <i class="fab fa-instagram fa-stack-1x"></i>
+          </span>
+        </a>
+
+        <!-- 
+
+
+        <div class="icon-flex">
+          <div class="icon-wrapper">
+              <i class="fab fa-instagram "></i>
+            </a>
+          </div>
+        </div> -->
       </div>
-    </div>
-
-    <div class="footer__links">
-      <a href="#">About Us</a>
-      <a href="#">Jobs</a>
-      <a href="#">Press</a>
-      <a href="#">Blog</a>
-    </div>
-
-    <div class="footer__links">
-      <a href="#">Contact Us</a>
-      <a href="#">Terms</a>
-      <a href="#">Privacy</a>
-    </div>
-    <div class="footer__socialbuttons">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
     </div>
     <hr>
+
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/snelling-a/fylo-dark" target="_blank">Andrew Snelling</a>.
     </p>
+
   </footer>
+
+
+
+
+
 </body>
+
+
+
+
+
 
 </html>

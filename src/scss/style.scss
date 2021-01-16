@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import "var";
+@import "header-footer";
 
 * {
     box-sizing: border-box;
@@ -24,13 +25,14 @@ html {
         h4,
         h5,
         h6 {
-            font-family: $heading-font;
+            font-family: $heading-cta-nav;
         }
 
         font-size: 14px;
 
         a {
             color: $white;
+            text-decoration: none;
         }
 
         .btn {
