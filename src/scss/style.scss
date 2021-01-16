@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import "var";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    background: $background;
+    color: $white;
+    display: inline-block;
+    font-family: $body-font;
+    font-size: 11px;
+    text-align: center;
+
+    body {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: $heading-font;
+        }
+
+        font-size: 14px;
+
+        a {
+            color: $white;
+        }
+
+        .btn {
+            background-image: linear-gradient(to right, $cyan, $blue);
+        }
+    }
+}

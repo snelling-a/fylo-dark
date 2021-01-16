@@ -1,0 +1,36 @@
+/* FONTS */
+$heading-cta-nav: 'Raleway',
+sans-serif;
+$body-font: 'Open Sans',
+sans-serif;
+
+/* COLOURS */
+// intro and email sign up background
+$intro-email: hsl(217, 28%, 15%);
+// main background
+$background: hsl(218, 28%, 13%);
+// footer background
+$footer: hsl(216, 53%, 9%);
+// testimonials
+$testimonials: hsl(219, 30%, 18%);
+
+// ACCENT
+// inside call-to-action gradient
+$cyan: hsl(176, 68%, 64%);
+// inside call-to-action gradient
+$blue: hsl(198, 60%, 50%);
+// error
+$light-red: hsl(0, 100%, 63%);
+
+$white: hsl(0, 0%, 100%);
+
+/* LAYOUT */
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+}
+
+$mobile: 400px;
+$desktop: 1000px;
