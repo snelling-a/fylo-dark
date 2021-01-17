@@ -57,30 +57,31 @@ footer {
     background: $footer;
     padding-top: 15rem;
 
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 2rem;
+    }
 
     .logo {
-        width: 50%;
-        margin: 1.5rem;
         align-self: flex-start;
+        margin: 1.5rem;
+        width: 50%;
 
         @media screen and (min-width: $tablet) {
-            width: 30%;
-            margin-left: 3rem;
+            margin-left: 4rem;
+            width: 20%;
         }
 
         @media screen and (min-width: $desktop) {
             width: 10%;
-            ;
         }
-
     }
 
     .footer {
         display: flex;
         flex-direction: column;
+        height: 90%;
         text-align: left;
         width: 90%;
-        height: 90%;
 
         @media screen and (min-width: $tablet) {
             flex-direction: row;
@@ -93,9 +94,6 @@ footer {
             width: 95%;
         }
 
-
-
-
         &__contact {
             @media screen and (min-width: $tablet) {
                 flex-direction: row;
@@ -103,15 +101,15 @@ footer {
             }
 
             @media screen and (min-width: $desktop) {
-                width: 45%;
-                height: 50%;
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
+                column-gap: 1%;
+                height: 50%;
                 grid-template-areas:
                     "address address phone"
                     "address address email";
-                column-gap: 15%;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                width: 45%;
             }
 
             &--type {
@@ -120,7 +118,9 @@ footer {
                 justify-content: space-around;
                 margin: $footer-item-margin;
 
-                @media screen and (min-width: $desktop) {}
+                @media screen and (min-width: $desktop) {
+                    justify-content: space-between;
+                }
 
                 img {
                     height: 20%;
@@ -128,22 +128,13 @@ footer {
                     @media screen and (min-width: $desktop) {
                         height: fit-content;
                     }
-
                 }
 
                 address,
                 a {
-                    width: 85%;
                     font-style: normal;
-
-                    &:hover {
-                        font-weight: 700;
-                        text-decoration: underline;
-                    }
-
+                    width: 85%;
                 }
-
-
             }
 
             &--address {
@@ -152,23 +143,17 @@ footer {
 
             &--phone {
                 grid-area: phone;
-
-
             }
 
             &--email {
                 grid-area: email;
             }
-
         }
-
-
 
         &__links {
             display: flex;
             flex-direction: column;
             margin: $footer-item-margin;
-
 
             @media screen and (min-width: $tablet) {
                 flex-direction: row;
@@ -179,7 +164,6 @@ footer {
 
             @media screen and (min-width: $desktop) {
                 width: 25%;
-
             }
 
             &--group {
@@ -222,13 +206,13 @@ footer {
 
             @media screen and (min-width: $tablet) {
                 align-self: center;
-                width: 25%;
                 margin: 2rem auto;
+                width: 25%;
             }
 
             @media screen and (min-width: $desktop) {
-                width: 8%;
                 margin: 0;
+                width: 8%;
             }
 
 
