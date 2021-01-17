@@ -3,23 +3,23 @@
     margin: 2rem;
 
     @media screen and (min-width: $tablet) {
+        align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: center;
     }
 
     .feature-card {
+        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        width: 80%;
         margin: 3rem;
+        width: 80%;
 
         @media screen and (min-width: $tablet) {
-            width: 35%;
             margin: 2rem;
+            width: 35%;
         }
 
         img {
