@@ -57,6 +57,24 @@ footer {
     background: $footer;
     padding-top: 15rem;
 
+
+    .logo {
+        width: 50%;
+        margin: 1.5rem;
+        align-self: flex-start;
+
+        @media screen and (min-width: $tablet) {
+            width: 30%;
+            margin-left: 3rem;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 10%;
+            ;
+        }
+
+    }
+
     .footer {
         display: flex;
         flex-direction: column;
@@ -64,14 +82,37 @@ footer {
         width: 90%;
         height: 90%;
 
-
-        &__logo {
-            width: 50%;
-            margin: 1rem;
-
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
 
+        @media screen and (min-width: $desktop) {
+            flex-direction: row;
+            width: 95%;
+        }
+
+
+
+
         &__contact {
+            @media screen and (min-width: $tablet) {
+                flex-direction: row;
+                width: 45%;
+            }
+
+            @media screen and (min-width: $desktop) {
+                width: 45%;
+                height: 50%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-areas:
+                    "address address phone"
+                    "address address email";
+                column-gap: 15%;
+            }
 
             &--type {
                 display: flex;
@@ -79,8 +120,14 @@ footer {
                 justify-content: space-around;
                 margin: $footer-item-margin;
 
+                @media screen and (min-width: $desktop) {}
+
                 img {
                     height: 20%;
+
+                    @media screen and (min-width: $desktop) {
+                        height: fit-content;
+                    }
 
                 }
 
@@ -93,46 +140,105 @@ footer {
                         font-weight: 700;
                         text-decoration: underline;
                     }
+
                 }
+
 
             }
 
+            &--address {
+                grid-area: address;
+            }
+
+            &--phone {
+                grid-area: phone;
+
+
+            }
+
+            &--email {
+                grid-area: email;
+            }
+
         }
+
+
 
         &__links {
             display: flex;
             flex-direction: column;
             margin: $footer-item-margin;
 
-            &--2 {
-                margin: 2rem 0 2rem;
+
+            @media screen and (min-width: $tablet) {
+                flex-direction: row;
+                justify-content: center;
+                justify-content: space-around;
+                width: 40%;
             }
 
-            a {
-                margin: 1rem 0 1rem;
+            @media screen and (min-width: $desktop) {
+                width: 25%;
 
-                &:hover {
-                    font-weight: 700;
+            }
+
+            &--group {
+                display: flex;
+                flex-direction: column;
+
+                @media screen and (min-width: $tablet) {
+                    flex: 1;
+                }
+
+                &2 {
+                    margin: 2rem 0 2rem;
+
+                    @media screen and (min-width: $tablet) {
+                        margin: 0;
+                    }
+                }
+
+                a {
+                    margin: 1rem 0 1rem;
+                    width: 50%;
+
+                    @media screen and (min-width: $tablet) {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        font-weight: 700;
+                    }
                 }
             }
-
-
         }
 
         &__socialbuttons {
+            align-self: center;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            margin: 2rem 0 3rem;
             width: 50%;
-            align-self: center;
-            margin: 4rem 0;
-            /* fucking font awesome */
+
+            @media screen and (min-width: $tablet) {
+                align-self: center;
+                width: 25%;
+                margin: 2rem auto;
+            }
+
+            @media screen and (min-width: $desktop) {
+                width: 8%;
+                margin: 0;
+            }
+
 
             .fa-stack {
-                border-radius: 50%;
-                // box-sizing: border-box;
                 border: 1px solid $white;
+                border-radius: 50%;
 
+                @media screen and (min-width: $desktop) {
+                    font-size: .75vw;
+                }
             }
 
             .fa-stack:hover {
@@ -142,32 +248,7 @@ footer {
             .fa-stack:hover .fa-stack-1x {
                 color: cyan;
             }
-
-
-
-            /*             .icon-flex,
-            .icon-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            a:hover {
-                color: $cyan;
-                border-color: $cyan;
-            }
-
-            .icon-wrapper {
-                border-radius: 50%;
-                overflow: hidden;
-                border: 1px solid $white;
-                width: 2.5rem;
-                height: 2.5rem;
-
-            }
- */
         }
-
     }
 
     hr {
