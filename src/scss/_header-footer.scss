@@ -1,8 +1,8 @@
 header {
-    background: $background;
+    background: $intro-email;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0;
     position: fixed;
     width: 100%;
 
@@ -11,7 +11,7 @@ header {
     }
 
     @media screen and (min-width: $desktop) {
-        padding: 2rem;
+        padding: 2rem 2rem 0;
     }
 
     h1 {
@@ -214,7 +214,6 @@ footer {
                 margin: 0;
                 width: 8%;
             }
-
 
             .fa-stack {
                 border: 1px solid $white;

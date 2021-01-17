@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@import "var";
-@import "header-footer";
+@import 'var';
+@import 'header-footer';
+@import 'cta';
+@import 'features';
 
 * {
     box-sizing: border-box;
@@ -37,6 +39,24 @@ html {
 
         .btn {
             background-image: linear-gradient(to right, $cyan, $blue);
+            // border: none;
+            border-radius: 1.75rem;
+            color: $white;
+            padding: 1rem 2rem;
+            margin: 2rem 0;
+            width: 70%;
+
+            @media screen and (min-width: $tablet) {
+                width: 50%;
+            }
+
+            @media screen and (min-width: $desktop) {
+                width: 40%;
+            }
+
+            &:hover {
+                background: $cyan;
+            }
         }
     }
 }
