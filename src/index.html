@@ -158,38 +158,49 @@
 
     </section>
 
-    <section>
-      <img src="/img/bg-quotes.png" alt="quotes">
+    <section class="testimonials">
+      <img class="testimonial__img" src="/img/bg-quotes.png" alt="quotes">
       <div class="testimonial">
-        Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-        become a well-oiled collaboration machine.
-        <div class="testimonial__profile">
+
+        <div class="testimonial__card">
+          <div class="testimonial__card--text">
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+            become a well-oiled collaboration machine.
+          </div>
           <img src="/img/profile-1.jpg" alt="satish-patel">
-          <div class="testimonial__profile--name">Satish Patel</div>
-          Founder & CEO, Huddle
+          <div class="testimonial__card--profile">
+            <div class="testimonial__card--name">Satish Patel</div>
+            <div class="testimonial__card--title">Founder & CEO, Huddle</div>
+          </div>
+
         </div>
-      </div>
 
-      <div class="testimonials">
-        Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-        become a well-oiled collaboration machine.
+        <div class="testimonial__card testimonial__card--2">
+          <div class="testimonial__card--text">
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+            become a well-oiled collaboration machine.
+          </div>
 
-        <div class="testimonial__profile">
           <img src="/img/profile-2.jpg" alt="bruce-mckenzie">
-          <div class="testimonial__profile--name">Bruce McKenzie</div>
-          Founder & CEO, Huddle
+          <div class="testimonial__card--profile">
+            <div class="testimonial__card--name">Bruce McKenzie</div>
+            <div class="testimonial__card--title">Founder & CEO, Huddle</div>
+          </div>
         </div>
-      </div>
 
-      <div class="testimonials">
-        Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-        become a well-oiled collaboration machine.
+        <div class="testimonial__card">
+          <div class="testimonial__card--text">
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+            become a well-oiled collaboration machine.
+          </div>
 
-        <div class="testimonial__profile">
           <img src="/img/profile-3.jpg" alt="iva-boyd">
-          <div class="testimonial__profile--name">Iva Boyd</div>
-          Founder & CEO, Huddle
+          <div class="testimonial__card--profile">
+            <div class="testimonial__card--name">Iva Boyd</div>
+            <div class="testimonial__card--title">Founder & CEO, Huddle</div>
+          </div>
         </div>
+
       </div>
 
     </section>
@@ -198,18 +209,24 @@
 
 
 
-    <section class="early-access">
+    <section class="signup">
+      <div class="early-access">
 
-      <div class="early-access__title">Get early access today</div>
+        <div class="early-access__title">Get early access today</div>
 
-      <p>
-        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-        questions, our support team would be happy to help you.
-      </p>
-      <form action="#">
-        <input type="email" placeholder="email@example.com" required>
-        <input class="btn" type="submit" value="Get Started For Free">
-      </form>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+          questions, our support team would be happy to help you.
+        </p>
+        <form action="#">
+          <input type="text" name="email" value="" placeholder="email@example.com" required>
+          <span class="error">
+            <p id="email_error">Please enter a valid email address</p>
+          </span>
+
+          <input class="btn" type="submit" value="Get Started For Free">
+        </form>
+      </div>
 
     </section>
 

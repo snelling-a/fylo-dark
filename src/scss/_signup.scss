@@ -1,0 +1,38 @@
+.signup {
+    position: relative;
+    height: 12rem;
+
+    .early-access {
+        background: $intro-email;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem;
+        position: absolute;
+        border-radius: 1rem;
+        left: 5%;
+
+        &__title {
+            font-weight: 700;
+            margin: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        input[type='text'] {
+            border: none;
+            border-radius: 1.75rem;
+            color: $white;
+            padding: 1rem 2rem;
+            margin: 0;
+            width: 100%;
+        }
+
+        .btn {
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+    }
+}

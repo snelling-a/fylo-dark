@@ -1,0 +1,98 @@
+.testimonials {
+    text-align: left;
+    padding-bottom: 5rem;
+
+    @media screen and (min-width: $tablet) {
+        position: relative;
+    }
+
+    .testimonial__img {
+        left: 10%;
+        position: relative;
+        width: 2rem;
+
+        @media screen and (min-width: $tablet) {
+            position: absolute;
+            left: 2%;
+            top: 0.5%;
+            z-index: -2;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 4rem;
+            left: 5%;
+            top: -2%;
+        }
+    }
+}
+
+.testimonial {
+    @include flex-col;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        position: relative;
+        z-index: -1;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    &__card {
+        background: $testimonials;
+        border: 1px solid $testimonials;
+        border-radius: .5rem;
+        box-shadow: 0 0 5px 5px hsla(219, 30%, 18%, 0.342);
+        display: grid;
+        grid-template-areas:
+            "blurb blurb blurb"
+            "image profile .";
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        padding: 1rem;
+        width: 80%;
+
+        @media screen and (min-width: $tablet) {
+            width: 30%;
+            border-radius: 0;
+        }
+
+        &--2 {
+            margin: 1.5rem 0;
+        }
+
+        &--text {
+            grid-area: blurb;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            border-radius: 50%;
+            grid-area: image;
+            width: 60%;
+        }
+
+        &--profile {
+            grid-area: profile;
+        }
+
+        &--name {
+            font-weight: 700;
+        }
+
+        &--title {
+            font-size: 11px;
+        }
+    }
+}
+
+/* 
+@media screen and (min-width: $tablet) {}
+@media screen and (min-width: $desktop) {}
+ */
