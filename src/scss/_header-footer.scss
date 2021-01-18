@@ -219,6 +219,7 @@ footer {
             .fa-stack {
                 border: 1px solid $white;
                 border-radius: 50%;
+                font-weight: 700;
 
                 @media screen and (min-width: $desktop) {
                     font-size: .75vw;
